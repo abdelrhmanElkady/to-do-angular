@@ -1,0 +1,18 @@
+<div class="todo-item   mb-3  pt-2 px-1" [class.completed]="todo.isCompleted" (click)= "onItemClicked()">
+        <div class="d-flex align-items-center">
+            <span class="check d-flex justify-content-center align-items-center ">
+                <i class="fas fa-check "></i>
+            </span>
+
+            <p class="ms-4 text-break mt-3"> {{todo.text}}</p>
+        </div>
+
+        <!-- (click) = "$event.stopPropagation() this prevent from firing the  (click)= "onItemClicked()" -->
+        
+        <div class="d-flex justify-content-end edit-delete-parent" (click) = "$event.stopPropagation()">
+            <div class="d-flex edit-delete-cont">
+                <i class="fas fa-pencil-alt py-2 px-3 text-dark fs-5" (click) = "onEditClicked()" ></i>
+                <i class="fas fa-trash-alt py-2 px-3 text-dark fs-5" (click) = "onDeleteClicked()"></i>
+            </div>
+        </div>
+    </div>

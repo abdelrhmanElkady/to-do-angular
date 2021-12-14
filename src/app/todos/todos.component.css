@@ -1,0 +1,27 @@
+
+header{
+    background: linear-gradient(to  right,rgb(152, 207, 193),rgb(74,215,240));
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+.add-box{
+    background-color: white;
+    margin-top: -58px !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.add-btn{
+    z-index: 0 !important;
+}
+
+
+
+.layer{
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: rgba(0, 0, 0, .5);
+        
+}

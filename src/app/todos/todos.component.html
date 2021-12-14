@@ -1,0 +1,49 @@
+<header class="text-center ">
+    <h1 class="text-white">Todos</h1>
+</header>
+<section class="add-box p-3 w-50 m-auto">
+    <form #form="ngForm" (ngSubmit) = "onFormSubmit(form)">
+        <div class="form-group">
+            <label for="content" class="form-label">New Todo</label>
+            <div class="d-flex mt-3 input-group">
+                <input ngModel required type="text" name="content" class="form-control  rounded" placeholder="Type todo text here.....">
+                <button class="btn btn-danger  rounded ms-3 add-btn" type="submit">+ add</button>
+            </div>
+            <h6 *ngIf = "(form.invalid && form.touched)|| isEmpty " class="text-danger mt-1">please enter the text of your Todo</h6>
+
+        </div>
+    </form>
+
+</section>
+
+<section class="todo-items mt-5 w-50 m-auto">
+    <app-todo-item 
+    *ngFor="let todo of todos; let i = index "
+     [todo] = 'todo'
+     (itemClicked) = "toggleComplete(todo)"
+     (deleteClicked) = "deletItem(i)"
+     (editClicked) = "editItem(i)"
+    ></app-todo-item>
+
+    
+</section>
+
+<section class="layer d-flex justify-content-center align-items-center" *ngIf = "showDialog">
+    <div class="dialog w-50 bg-white p-4">
+        <form #DialogForm="ngForm" (ngSubmit) = "onDialogSubmit(DialogForm)">
+            <label class="text-dark mb-3" for="text">
+                Edit Todo
+            </label>
+                <input type="text" class="form-control " placeholder="Type Todo text here..." ngModel required name="text" [(ngModel)] = "textToEdit">
+                <h6 *ngIf = "(DialogForm.invalid && DialogForm.touched) " class="text-danger mt-1">please enter the text of your Todo</h6>
+                <div class="d-flex justify-content-end mt-3">
+                    <button class="btn btn-secondary me-3" (click) = "cancelDialog()" type="button">cancel</button>
+                    <button class="btn btn-danger" type="submit">Save</button>
+                </div>
+                
+        </form>
+        
+
+    </div>
+
+</section>

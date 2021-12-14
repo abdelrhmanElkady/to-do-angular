@@ -1,0 +1,43 @@
+[debug] [2021-09-16T08:17:57.960Z] ----------------------------------------------------------------------
+[debug] [2021-09-16T08:17:57.962Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\0\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-09-16T08:17:57.963Z] CLI Version:   9.18.0
+[debug] [2021-09-16T08:17:57.963Z] Platform:      win32
+[debug] [2021-09-16T08:17:57.963Z] Node Version:  v14.17.1
+[debug] [2021-09-16T08:17:57.964Z] Time:          Thu Sep 16 2021 10:17:57 GMT+0200 (Eastern European Standard Time)
+[debug] [2021-09-16T08:17:57.964Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-09-16T08:17:58.034Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-09-16T08:17:58.034Z] > authorizing via signed-in user (abdoelkadyabdoelkady@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\web projects\angular practice\To Do app
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using simple-todo-site. 
+[debug] [2021-09-16T08:18:07.478Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/simple-todo-site [none]
+[debug] [2021-09-16T08:18:07.870Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/simple-todo-site 200
+[debug] [2021-09-16T08:18:07.871Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/simple-todo-site {"projectId":"simple-todo-site","projectNumber":"102282192759","displayName":"simple-todo-site","name":"projects/simple-todo-site","resources":{"hostingSite":"simple-todo-site"},"state":"ACTIVE"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

@@ -1,0 +1,84 @@
+.check{
+    height: 30px;
+    width: 30px;
+    border: 2px solid #eee;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+.fa-check{
+    
+    padding:3px;
+
+    /* hide by default */
+    opacity: 0;
+
+    transition: all 0.2s;
+    
+    
+   
+}
+
+.todo-item{
+    border-bottom: solid 2px #eee;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.todo-item:hover .fa-check{
+    opacity: 0.28;
+    
+}
+.todo-item:hover .check{
+    background-color: #eee;
+}
+
+.completed{
+    color: rgb(204, 197, 197);
+
+}
+
+.completed .check{
+    background-color: rgb(11,223,170);
+}
+.completed .check .fa-check{
+    opacity: 1;
+    color: #333;
+}
+
+.todo-item.completed:hover .check {
+    background-color:rgb(11,223,170) ;
+}
+
+.fa-pencil-alt{
+    background-color: #eee;
+    border-top-left-radius: 4px;
+
+}
+.fa-pencil-alt:hover{
+    background-color: gray;
+    color: rgb(11,223,170) !important;
+    
+}
+.fa-trash-alt{
+    background-color: #eee;
+    border-top-right-radius: 4px;
+}
+
+.fa-trash-alt:hover{
+    background-color: gray;
+    color: red !important;
+
+}
+.edit-delete-parent{
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+    transform: translateY(5px);
+}
+
+.todo-item:hover .edit-delete-parent{
+    opacity: 1 ;
+    visibility: visible;
+    transition-delay: 0.5s;
+    transform: translateY(0px);
+}
