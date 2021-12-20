@@ -1,3 +1,9 @@
+# to-do app 
+simple to-do app using angular and local storage 
+
+# live-demo
+https://abdelrhmanelkady.github.io/to-do-angular/
+
 # App1
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
